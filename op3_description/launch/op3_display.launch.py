@@ -11,7 +11,7 @@ def generate_launch_description():
 
   op3_description_path = FindPackageShare('op3_description')
   op3_urdf_path = PathJoinSubstitution([op3_description_path, 'urdf', 'robotis_op3.urdf.xacro'])
-  op3_description_content = ParameterValue(Command(['xacro ', op3_urdf_path]), value_type=str)
+  op3_description_content = ParameterValue(Command(['xacro', op3_urdf_path]), value_type=str)
 
   default_rviz_config_path = PathJoinSubstitution([op3_description_path, 'rviz', 'op3.rviz'])
 
